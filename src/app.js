@@ -31,7 +31,7 @@ app.post('/login', (req, res) => {
 
   if(!user) {
     res.status(401).json({
-      message: "Authentication failed",
+      message: "Authentication failed.",
     })
   }
 
@@ -51,7 +51,7 @@ app.get('/product', (req, res) => {
   console.log(token, "token");
   if(!token) {
     return res.status(401).json({
-      message: "Invalid token",
+      message: "Authentication requred.",
     });
   }
 
