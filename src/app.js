@@ -51,7 +51,7 @@ app.get('/product', (req, res) => {
   console.log(token, "token");
   if(!token) {
     return res.status(401).json({
-      message: "Authentication Required",
+      message: "Invalid token",
     });
   }
 
